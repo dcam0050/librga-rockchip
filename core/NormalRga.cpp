@@ -1510,8 +1510,8 @@ int RgaBlit(rga_info *src, rga_info *dst, rga_info *src1) {
             ret = ioctl(ctx->rgaFd, sync_mode, ioc_req);
         } while (ret == -1 && (errno == EINTR || errno == 512));   /* ERESTARTSYS is 512. */
         if(ret) {
-            printf(" %s(%d) RGA_BLIT fail: %s\n",__FUNCTION__, __LINE__,strerror(errno));
-            ALOGE(" %s(%d) RGA_BLIT fail: %s",__FUNCTION__, __LINE__,strerror(errno));
+//            printf(" %s(%d) RGA_BLIT fail: %s\n",__FUNCTION__, __LINE__,strerror(errno));
+//            ALOGE(" %s(%d) RGA_BLIT fail: %s",__FUNCTION__, __LINE__,strerror(errno));
             return -errno;
         }
     }

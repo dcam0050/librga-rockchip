@@ -309,16 +309,16 @@ RGA_SINGLETON_STATIC_INSTANCE(RockchipRga)
         if (!rgaInfo)
             return -EINVAL;
 
-        ALOGE("handl-fd-vir-phy-hnd-format[%d, %d, %p, %p, %lx, %d]",
-              rgaInfo->handle, rgaInfo->fd, rgaInfo->virAddr, rgaInfo->phyAddr,
-              (unsigned long)rgaInfo->hnd, rgaInfo->format);
-        ALOGE("rect[%d, %d, %d, %d, %d, %d, %d, %d]",
-              rgaInfo->rect.xoffset, rgaInfo->rect.yoffset,
-              rgaInfo->rect.width,   rgaInfo->rect.height, rgaInfo->rect.wstride,
-              rgaInfo->rect.hstride, rgaInfo->rect.format, rgaInfo->rect.size);
-        ALOGE("f-blend-size-rotation-col-log-mmu[%d, %x, %d, %d, %d, %d, %d]",
-              rgaInfo->format, rgaInfo->blend, rgaInfo->bufferSize,
-              rgaInfo->rotation, rgaInfo->color, rgaInfo->testLog, rgaInfo->mmuFlag);
+//        ALOGE("handl-fd-vir-phy-hnd-format[%d, %d, %p, %p, %lx, %d]",
+//              rgaInfo->handle, rgaInfo->fd, rgaInfo->virAddr, rgaInfo->phyAddr,
+//              (unsigned long)rgaInfo->hnd, rgaInfo->format);
+//        ALOGE("rect[%d, %d, %d, %d, %d, %d, %d, %d]",
+//              rgaInfo->rect.xoffset, rgaInfo->rect.yoffset,
+//              rgaInfo->rect.width,   rgaInfo->rect.height, rgaInfo->rect.wstride,
+//              rgaInfo->rect.hstride, rgaInfo->rect.format, rgaInfo->rect.size);
+//        ALOGE("f-blend-size-rotation-col-log-mmu[%d, %x, %d, %d, %d, %d, %d]",
+//              rgaInfo->format, rgaInfo->blend, rgaInfo->bufferSize,
+//              rgaInfo->rotation, rgaInfo->color, rgaInfo->testLog, rgaInfo->mmuFlag);
         return 0;
     }
 
